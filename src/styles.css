@@ -23,7 +23,7 @@ main { min-height: calc(100vh - 136px); }
 .footer { padding:24px; text-align:center; color:#8B8E99; font-size:10px; letter-spacing:1.5px; }
 .footer span { color:var(--gold); padding:0 8px; }
 .hero-shell { max-width:1160px; margin:0 auto; padding:90px 32px 80px; min-height:650px; display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:55px; }
-.eyebrow { font-size:10px; font-weight:700; letter-spacing:1.8px; color:#7C8396; margin:0 0 18px; }
+.eyebrow { font-size:10px; font-weight:700; letter-spacing:1.8px; color:#B58A32; margin:0 0 18px; }
 h1 { font-size:clamp(40px, 5.5vw, 66px); line-height:1.04; letter-spacing:-2.8px; margin:0; color:var(--navy); }
 h1 em { color:#4DAE7A; font-style:normal; }
 .lead { color:#72798B; font-size:17px; line-height:1.7; max-width:520px; margin:24px 0; }
@@ -47,13 +47,13 @@ h1 em { color:#4DAE7A; font-style:normal; }
 .survey-shell { width:min(720px, calc(100% - 40px)); margin:60px auto 80px; padding:42px clamp(22px, 5vw, 54px); background:white; border:1px solid var(--line); border-radius:24px; box-shadow:0 20px 70px #1f2a5a08; }
 .progress-head { display:flex; justify-content:space-between; font-size:10px; letter-spacing:1.3px; color:#8B90A0; font-weight:700; margin-bottom:10px; }
 .progress-track { height:5px; background:#EFF0EB; border-radius:9px; overflow:hidden; margin-bottom:42px; }
-.progress-fill { height:100%; background:var(--green); transition:width .25s; }
+.progress-fill { height:100%; background:linear-gradient(90deg,var(--green),var(--gold)); transition:width .25s; }
 .question-title { font-size:clamp(30px, 5vw, 43px); letter-spacing:-1.5px; }
 .question-subtitle { color:var(--muted); margin:13px 0 0; }
 .answer-area { margin:34px 0 24px; }
 .choice-grid { display:grid; gap:10px; }
 .choice { width:100%; display:flex; justify-content:space-between; align-items:center; text-align:left; padding:16px 18px; border:1px solid #E6E8E2; border-radius:12px; background:#fff; color:var(--navy); }
-.choice.selected { border-color:var(--green); background:#F1FAF4; box-shadow:inset 0 0 0 1px var(--green); }
+.choice.selected { border-color:var(--gold); background:#FFF9EC; box-shadow:inset 0 0 0 1px var(--gold); }
 .choice-check { color:#3B9A68; font-weight:700; }
 .text-input { width:100%; border:1px solid #DDE0DA; border-radius:12px; padding:17px; color:var(--navy); outline:none; background:#FEFEFC; }
 .text-input:focus { border-color:#5CC48A; box-shadow:0 0 0 3px #5cc48a22; }
