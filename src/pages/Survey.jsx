@@ -141,7 +141,7 @@ export default function Survey() {
         <button className="button button-quiet" onClick={() => { setError(''); setStep(s => Math.max(0, s - 1)) }} disabled={step === 0}>Back</button>
         <button className="button button-primary" onClick={next} disabled={busy}>{busy ? 'Submitting…' : step === questions.length - 1 ? 'Submit response' : 'Continue'} <span>→</span></button>
       </div>
-      <p className="small-note">Your response is used for this student research project. Avoid entering personal details.</p>
+      
     </section>
   )
 }
