@@ -87,7 +87,7 @@ export default function Survey() {
   }
 
   if (complete) return (
-    <section className="survey-shell">
+    <section className="survey-shell success-screen">
       <div className="success-icon">✓</div>
       <p className="eyebrow">RESPONSE RECEIVED</p>
       <h1>Thank you for sharing your perspective.</h1>
@@ -120,6 +120,7 @@ export default function Survey() {
     <section className="survey-shell">
       <div className="progress-head"><span>QUESTION {step + 1} OF {questions.length}</span><span>{progress}%</span></div>
       <div className="progress-track"><div className="progress-fill" style={{ width: `${progress}%` }} /></div>
+      <div className="question-transition" key={step}>
       <p className="eyebrow">THE AI PERSPECTIVE</p>
       <h1 className="question-title">{question.title}</h1>
       {question.subtitle && <p className="question-subtitle">{question.subtitle}</p>}
@@ -141,7 +142,7 @@ export default function Survey() {
         <button className="button button-quiet" onClick={() => { setError(''); setStep(s => Math.max(0, s - 1)) }} disabled={step === 0}>Back</button>
         <button className="button button-primary" onClick={next} disabled={busy}>{busy ? 'Submitting…' : step === questions.length - 1 ? 'Submit response' : 'Continue'} <span>→</span></button>
       </div>
-      
+    </div>  
     </section>
   )
 }
